@@ -1,0 +1,26 @@
+a = input("what you like to play? (yes/no) ")
+if a.lower().strip() == "yes":
+
+    a = input("You reach a crossroads, would you like to left or right?").lower().strip()
+    if a == "left":
+          a = input("You encounter a monster,would you like to run or attack?")
+
+          if a == "attack":
+              print("The was not the greatest idea, you lost")
+          else:
+               print("Good choice, you made it away safely")
+
+               a = input("you see a car and a plane ,which you would like to take (plane/car)")
+
+               if a == "plane":
+                   print("unfortunately you don not know how to fly , game over")
+               else:
+                    print("you won!!!")
+
+    elif a == "right":
+            print("you walk aimlessly to the right and fall on a fatch of ice, you enjure your leg and cannot continue, game over!!")
+    else:
+        print("invalid choice , you lose")
+
+else:
+    print("That's to bad ")
